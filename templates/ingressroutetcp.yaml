@@ -9,7 +9,7 @@ spec:
   routes:
   - match: HostSNI(`{{ .Values.name }}.anubisdev.inday.io`)
     services:
-    - name: {{ .Values.namespace }}-active
+    - name: {{ .Values.name }}-vault-active
       port: 8200
   tls:
     passthrough: true
